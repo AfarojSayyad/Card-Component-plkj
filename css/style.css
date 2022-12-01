@@ -1,0 +1,155 @@
+html{
+    background-color: #fff !important;
+}
+h2{
+    font-size:16px;
+    /* padding:0 0 0 30px; */
+}
+.one-column  .three-column .column1 h2{
+    font-size: 16px;
+}
+
+.one-column  {
+    background-color: #1C4F8B;
+}
+
+.one-column .slds-size_8-of-12 {
+    display: flex;
+    align-items: center;
+}
+
+.one-column .slds-size_4-of-12 {
+    display: flex;
+    align-items: center;
+}
+
+.slds-card{
+    /* background-color: #1C4F8B; */
+    color: #fff;
+}
+
+
+
+
+ .one-column .slds-size_8-of-12 .column2 .border1{
+    border-left:1px solid #fff;
+  
+
+}
+
+.one-column .slds-size_8-of-12 .column2 .border2{
+    border-right:1px solid #fff;
+  
+
+}
+
+
+ .one-column .slds-size_8-of-12 .column2 span  {
+  
+    text-align: center;
+}
+
+
+.column3 div{
+   /* padding: 15px 89px; */
+   padding: 15px 20px;
+    background-color: #AAFFE0; 
+    color: black;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    border-radius: 10px;
+    /* height: 50px; */
+}
+
+.column3 h3 span{
+    font-size: 20px;
+    padding: 0 9px 0 0;
+}
+ .column3 h3{
+    font-size: 14px;
+}
+
+.slds-badge{
+    font-size: 10px;
+    color:#06A59A;
+    background-color: #fff;
+}
+
+
+/* Two Column Layout */
+
+/* .two-column  .three-column{
+    background-color: #E5E5E5;
+    color:#4B4B4B;
+
+}
+
+.two-column {
+    margin: 30px 0 0;
+}
+
+
+
+.two-column  .three-column .column3 div{
+    background-color: #FFDEBF;
+    margin-top: -30px;
+    padding:15px 55px ;
+}
+
+.two-column  .three-column .column3 div  .slds-badge{
+    color: #FB8111;
+}
+
+.two-column  .column1 h2{
+    font-size:16px;
+    padding:0 0 0 30px;
+}
+
+.two-column  .three-column .column2 .border1{
+    border:none;
+}
+
+.two-column  .three-column .column2 .border2{
+    border: none;
+}
+
+.two-column  .three-column {
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+ */
+
+
+ .two-column .one-column .slds-size_8-of-12{
+    display: flex;
+    flex-direction: column;
+ }
+ .two-column .one-column .slds-size_8-of-12 .column2 .border1{
+    border: none;
+ }
+ .two-column .one-column .slds-size_8-of-12 .column2 .border2{
+    border: none;
+ }
+/*  */
+.two-column  .three-column{
+    background-color: #E5E5E5;
+    color:#4B4B4B;
+
+}
+.two-column  .three-column .slds-size_8-of-12{
+    padding: 0 0 0 20px;
+}
+.two-column  .three-column .column2 .border1{
+    border:none;
+}
+
+.two-column  .three-column .column2 .border2{
+    border: none;
+}
+
+
+
+
+
+

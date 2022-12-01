@@ -1,0 +1,134 @@
+ /* COMMON CSS START HERE */
+html{
+    background-color: #fff !important;
+    overflow-x: hidden;
+}
+
+h2{
+    font-size:16px;
+    padding:0 0 0 15px;
+}
+/* indicator high */
+.bg-high{
+    background-color: #AAFFE0;
+
+}
+.bg-high .slds-badge{
+    color: #06A59A;
+}
+/* indicator medium */
+.bg-medium{
+    background-color: #FFDEBF;
+
+}
+.bg-medium .slds-badge{
+    color: #FB8111;
+}
+/* indicator low */
+.bg-low{
+    background-color: #FFC6C6;
+}
+.bg-low .slds-badge{
+    color:#FA4A4A;
+
+}
+
+.selected-column  {
+    background-color: #1C4F8B;
+    color: #fff;
+    border-radius: 5px;
+}
+.normal-bg  {
+    background-color: #E5E5E5;
+    color:#4B4B4B;
+    border-radius: 5px;
+}
+.column3 div{
+    padding: 15px 10px;
+     color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+ }
+ 
+ .column3 h3 span{
+     font-size: 20px;
+     padding: 0 9px 0 0;
+ }
+  .column3 h3{
+     font-size: 14px;
+ }
+ 
+ .slds-badge{
+     font-size: 10px;
+     background-color: #fff;
+ }
+ /* COMMON CSS END HERE */
+
+/* ONE COLUMN LAYOUT START */
+
+.one-column .slds-size_8-of-12 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.one-column .slds-size_8-of-12 .column2{
+    display: flex;
+    justify-content: space-between;
+}
+.one-column .slds-size_8-of-12 .column2 .border1{
+    border-left:1px solid #fff;
+}
+.one-column .slds-size_8-of-12 .column2 .border2{
+    border-right:1px solid #fff;
+}
+
+ .one-column .slds-size_8-of-12 .column2 span  {
+    text-align: center;
+}
+
+/* Two Column Layout Start*/
+
+.two-column   .column2 .border1{
+    border:none;
+}
+
+.two-column   .column2 .border2{
+    border: none;
+}
+.two-column .column3{
+    align-self: center;
+}
+/* Two Column Layout End here */
+
+
+/* THREE COLUMN Start*/
+.three-column{
+    position: relative;
+}
+.three-column .slds-size_12-of-12 .column1 h2{
+    text-overflow: ellipsis;
+    padding-left: 10px;
+}
+.three-column .two-column .slds-size_8-of-12{
+    width: 100%;
+}
+.three-column .two-column .slds-size_8-of-12 .column1 h2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    width: 200px;
+}
+
+.three-column .two-column .column3{
+    align-self: flex-start;
+}
+.three-column .two-column .column3 {
+    position: absolute; 
+    top: 10px; 
+    right: 0; 
+    width: 50%;
+}
+
