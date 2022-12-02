@@ -1,74 +1,75 @@
  /* COMMON CSS START HERE */
 html{
     background-color: #fff !important;
+}
+.container-main{
     overflow-x: hidden;
 }
-
-h2{
-    font-size:16px;
-    padding:0 0 0 15px;
-}
-/* indicator high */
-.bg-high{
-    background-color: #AAFFE0;
-
-}
-.bg-high .slds-badge{
-    color: #06A59A;
-}
-/* indicator medium */
-.bg-medium{
-    background-color: #FFDEBF;
-
-}
-.bg-medium .slds-badge{
-    color: #FB8111;
-}
-/* indicator low */
-.bg-low{
-    background-color: #FFC6C6;
-}
-.bg-low .slds-badge{
-    color:#FA4A4A;
-
-}
-
-.selected-column  {
+.card-selected {
     background-color: #1C4F8B;
     color: #fff;
     border-radius: 5px;
 }
-.normal-bg  {
+.card-default  {
     background-color: #E5E5E5;
     color:#4B4B4B;
     border-radius: 5px;
 }
-.column3 div{
-    padding: 15px 10px;
-     color: black;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     border-radius: 10px;
- }
- 
- .column3 h3 span{
-     font-size: 20px;
-     padding: 0 9px 0 0;
- }
-  .column3 h3{
-     font-size: 14px;
- }
- 
- .slds-badge{
-     font-size: 10px;
-     background-color: #fff;
- }
- .column2{
+.card-header h2{
+    font-size:16px;
+    /* padding:0 0 0 15px; */
+}
+.card-details{
     flex-wrap: wrap;
     row-gap: 1rem;
 
  }
+.card-btn div{
+    display: flex;
+    padding: 10px;
+     color: #3F3F40;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     flex-wrap: wrap;
+ }
+ 
+ .card-btn .text-86{
+     font-size: 20px;
+     padding: 0 9px 0 5px;
+     color: #646466;
+ }
+
+ .card-btn .slds-badge{
+     font-size: 10px;
+     background-color: #fff;
+ }
+/* indicator high */
+.card-btn .indicator-btn-high{
+    background-color: #AAFFE0;
+}
+.card-btn .indicator-btn-high .slds-badge{
+    color: #06A59A;
+}
+/* indicator medium */
+.card-btn .indicator-btn-medium{
+    background-color: #FFDEBF;
+
+}
+.card-btn .indicator-btn-medium .slds-badge{
+    color: #FB8111;
+}
+/* indicator low */
+.card-btn .indicator-btn-low{
+    background-color: #FFC6C6;
+}
+.card-btn .indicator-btn-low .slds-badge{
+    color:#FA4A4A;
+
+}
+
  /* COMMON CSS END HERE */
 
 /* ONE COLUMN LAYOUT START */
@@ -82,62 +83,71 @@ h2{
     flex-direction: row;
     align-items: center;
 }
+.slds-size_12-of-12 .slds-size_8-of-12 .card-header h2{
+    padding-left: 15px;
+}
 
-.slds-size_12-of-12 .slds-size_8-of-12 .column2{
+.slds-size_12-of-12 .slds-size_8-of-12 .card-details{
     display: flex;
     justify-content: space-between;
+    /* padding: 20px; */
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .column2 .border1{
+.slds-size_12-of-12 .slds-size_8-of-12 .card-details .border-left{
     border-left:1px solid #fff;
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .column2 .border2{
+.slds-size_12-of-12 .slds-size_8-of-12 .card-details .border-right{
     border-right:1px solid #fff;
 }
 
- .slds-size_12-of-12 .slds-size_8-of-12 .column2 span  {
+ .slds-size_12-of-12 .slds-size_8-of-12 .card-details span  {
     text-align: center;
 }
+/* ONE COLUMN LAYOUT END */
 
-/* Two Column Layout Start*/
+/* TWO COLUMN LAYOUT START */
 
-.slds-size_6-of-12   .column2 .border1{
-    border:none;
-}
-
-.slds-size_6-of-12   .column2 .border2{
-    border: none;
-}
-.slds-size_6-of-12 .column3{
+.slds-size_6-of-12 .card-btn{
     align-self: center;
+    padding-right: 35px;
+    /* width: 30%; */
 }
-/* Two Column Layout End here */
+.slds-size_6-of-12 .slds-size_8-of-12  .card-header{
+    padding: 10px;
+}
+.slds-size_6-of-12 .slds-size_8-of-12  .card-header h2{
+    padding-left: 5px;
+}
+.slds-size_6-of-12 .slds-size_8-of-12 .card-details{
+    padding-top: 0px;
+}
+/* ONE COLUMN LAYOUT END */
 
 
-/* THREE COLUMN Start*/
-.three-column{
+/* THREE COLUMN START*/
+.card-three-column{
     position: relative;
 }
-.three-column .slds-size_12-of-12 .column1 h2{
-    text-overflow: ellipsis;
-    padding-left: 10px;
-}
-.three-column .two-column .slds-size_8-of-12{
+
+.card-three-column  .slds-size_8-of-12{
     width: 100%;
 }
-.three-column .two-column .slds-size_8-of-12 .column1 h2{
+.card-three-column  .slds-size_8-of-12 .card-header h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
-    width: 200px;
+    width: 45%;
+    padding-left: 15px;
+}
+.card-three-column  .slds-size_8-of-12 .card-details{
+    padding-top: 12px;
 }
 
-.three-column .two-column .column3{
-    align-self: flex-start;
-}
-.three-column .two-column .column3 {
+.card-three-column  .card-btn {
     position: absolute; 
     top: 10px; 
-    right: 0; 
+    right: 20px; 
     width: 50%;
 }
+
+/* THREE COLUMN END*/
 
