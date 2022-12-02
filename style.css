@@ -105,10 +105,10 @@ html{
 /* ONE COLUMN LAYOUT END */
 
 /* TWO COLUMN LAYOUT START */
-
+.slds-size_6-of-12{
+    position: relative;
+}
 .slds-size_6-of-12 .card-btn{
-    align-self: center;
-    padding-right: 35px;
     /* width: 30%; */
 }
 .slds-size_6-of-12 .slds-size_8-of-12  .card-header{
@@ -120,6 +120,23 @@ html{
 .slds-size_6-of-12 .slds-size_8-of-12 .card-details{
     padding-top: 0px;
 }
+.slds-size_6-of-12 .slds-size_4-of-12{
+    height: 54px;
+}
+.slds-size_6-of-12 .card-btn{
+    align-self: center;
+    position: relative;
+    padding-right: 40px !important;
+
+}
+.slds-size_6-of-12 .card-btn .indicator-btn-medium{
+    position:absolute;
+    /* top:-20px; */
+
+   
+
+}
+
 /* ONE COLUMN LAYOUT END */
 
 
