@@ -64,41 +64,50 @@ h2{
      font-size: 10px;
      background-color: #fff;
  }
+ .column2{
+    flex-wrap: wrap;
+    row-gap: 1rem;
+
+ }
  /* COMMON CSS END HERE */
 
 /* ONE COLUMN LAYOUT START */
+.slds-size_12-of-12{
+    display: flex;
+    align-items: center;
+}
 
-.one-column .slds-size_8-of-12 {
+.slds-size_12-of-12 .slds-size_8-of-12 {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.one-column .slds-size_8-of-12 .column2{
+.slds-size_12-of-12 .slds-size_8-of-12 .column2{
     display: flex;
     justify-content: space-between;
 }
-.one-column .slds-size_8-of-12 .column2 .border1{
+.slds-size_12-of-12 .slds-size_8-of-12 .column2 .border1{
     border-left:1px solid #fff;
 }
-.one-column .slds-size_8-of-12 .column2 .border2{
+.slds-size_12-of-12 .slds-size_8-of-12 .column2 .border2{
     border-right:1px solid #fff;
 }
 
- .one-column .slds-size_8-of-12 .column2 span  {
+ .slds-size_12-of-12 .slds-size_8-of-12 .column2 span  {
     text-align: center;
 }
 
 /* Two Column Layout Start*/
 
-.two-column   .column2 .border1{
+.slds-size_6-of-12   .column2 .border1{
     border:none;
 }
 
-.two-column   .column2 .border2{
+.slds-size_6-of-12   .column2 .border2{
     border: none;
 }
-.two-column .column3{
+.slds-size_6-of-12 .column3{
     align-self: center;
 }
 /* Two Column Layout End here */
