@@ -17,7 +17,6 @@ html{
 }
 .card-header h2{
     font-size:16px;
-    /* padding:0 0 0 15px; */
 }
 .card-details{
     flex-wrap: wrap;
@@ -90,7 +89,6 @@ html{
 .slds-size_12-of-12 .slds-size_8-of-12 .card-details{
     display: flex;
     justify-content: space-between;
-    /* padding: 20px; */
 }
 .slds-size_12-of-12 .slds-size_8-of-12 .card-details .border-left{
     border-left:1px solid #fff;
@@ -108,9 +106,7 @@ html{
 .slds-size_6-of-12{
     position: relative;
 }
-.slds-size_6-of-12 .card-btn{
-    /* width: 30%; */
-}
+
 .slds-size_6-of-12 .slds-size_8-of-12  .card-header{
     padding: 10px;
 }
@@ -120,24 +116,15 @@ html{
 .slds-size_6-of-12 .slds-size_8-of-12 .card-details{
     padding-top: 0px;
 }
-.slds-size_6-of-12 .slds-size_4-of-12{
-    height: 54px;
-}
-.slds-size_6-of-12 .card-btn{
-    align-self: center;
-    position: relative;
-    padding-right: 40px !important;
 
-}
 .slds-size_6-of-12 .card-btn .indicator-btn-medium{
     position:absolute;
-    /* top:-20px; */
-
-   
-
+    top:20px;
+    margin-right: 40px !important;
+    padding: 5px;
 }
 
-/* ONE COLUMN LAYOUT END */
+/* TWO COLUMN LAYOUT END */
 
 
 /* THREE COLUMN START*/
