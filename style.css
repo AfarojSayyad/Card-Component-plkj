@@ -2,28 +2,43 @@
 html{
     background-color: #fff !important;
 }
-.container-main{
+.card{
     overflow-x: hidden;
+    margin: 20px;
 }
-.card-selected {
+.slds-grid{
+    row-gap: 1rem;
+}
+.card_selected {
     background-color: #1C4F8B;
     color: #fff;
     border-radius: 5px;
 }
-.card-default  {
+.card_default  {
     background-color: #E5E5E5;
     color:#4B4B4B;
     border-radius: 5px;
 }
-.card-header h2{
+.card_header h2{
     font-size:16px;
 }
-.card-details{
+.card_details{
     flex-wrap: wrap;
     row-gap: 1rem;
 
  }
-.card-btn div{
+/* .card_btn div{
+    display: flex;
+    padding: 5px 12px;
+     color: #3F3F40;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     flex-wrap: wrap;
+ } */
+ .card-btn-bg{
     display: flex;
     padding: 5px 12px;
      color: #3F3F40;
@@ -34,46 +49,43 @@ html{
      border-radius: 10px;
      flex-wrap: wrap;
  }
- 
- .card-btn .text-86{
+  .card_btn-text{
      font-size: 20px;
      padding: 0 9px 0 5px;
      color: #646466;
  }
-
- .card-btn .slds-badge{
+  .slds-badge{
      font-size: 10px;
      background-color: #fff;
  }
 /* indicator high */
-.card-btn .indicator-btn-high{
+ .card_indicator-high{
     background-color: #AAFFE0;
 }
-.card-btn .indicator-btn-high .slds-badge{
+ .slds-pill-high{
     color: #06A59A;
 }
 /* indicator medium */
-.card-btn .indicator-btn-medium{
+ .card_indicator-medium{
     background-color: #FFDEBF;
 
 }
-.card-btn .indicator-btn-medium .slds-badge{
+ .slds-pill-medium{
     color: #FB8111;
 }
 /* indicator low */
-.card-btn .indicator-btn-low{
+ .card_indicator-low{
     background-color: #FFC6C6;
 }
-.card-btn .indicator-btn-low .slds-badge{
+ .slds-pill-low{
     color:#FA4A4A;
-
 }
-
  /* COMMON CSS END HERE */
+ 
 
 /* ONE COLUMN LAYOUT START */
 .slds-size_12-of-12{
-    display: flex;
+    /* display: flex; */
     align-items: center;
 }
 
@@ -81,24 +93,27 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .card-header h2{
+.slds-size_12-of-12 .slds-size_8-of-12 .card_header h2{
     padding-left: 15px;
-}
 
-.slds-size_12-of-12 .slds-size_8-of-12 .card-details{
+}
+.slds-size_12-of-12 .slds-size_8-of-12 .card_details{
     display: flex;
     justify-content: space-between;
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .card-details .border-left{
+.slds-size_12-of-12 .slds-size_8-of-12 .card_details .card_details-border_left{
     border-left:1px solid #fff;
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .card-details .border-right{
+.slds-size_12-of-12 .slds-size_8-of-12 .card_details .card_details-border_right{
     border-right:1px solid #fff;
 }
-
- .slds-size_12-of-12 .slds-size_8-of-12 .card-details span  {
+ .slds-size_12-of-12 .slds-size_8-of-12 .card_details span  {
     text-align: center;
+}
+.slds-size_12-of-12 .card_btn{
+    align-self: center;
 }
 /* ONE COLUMN LAYOUT END */
 
@@ -106,52 +121,61 @@ html{
 .slds-size_6-of-12{
     position: relative;
 }
-
-.slds-size_6-of-12 .slds-size_8-of-12  .card-header{
+.slds-size_6-of-12 .slds-size_8-of-12  .card_header{
     padding: 10px;
 }
-.slds-size_6-of-12 .slds-size_8-of-12  .card-header h2{
+.slds-size_6-of-12 .slds-size_8-of-12  .card_header h2{
     padding-left: 5px;
 }
-.slds-size_6-of-12 .slds-size_8-of-12 .card-details{
+.slds-size_6-of-12 .slds-size_8-of-12 .card_details{
     padding-top: 0px;
 }
-
-.slds-size_6-of-12 .card-btn{
-
+.slds-size_6-of-12 .card_btn{
     position:absolute;
-    top:20px;
-    right: 10px !important;
+    top:30px;
+    right: 30px ;
 }
-
 /* TWO COLUMN LAYOUT END */
 
-
 /* THREE COLUMN START*/
-.card-three-column{
+.slds-grid > .slds-size_4-of-12{
     position: relative;
 }
-
-.card-three-column  .slds-size_8-of-12{
+.slds-grid > .slds-size_4-of-12  .slds-size_8-of-12{
     width: 100%;
 }
-.card-three-column  .slds-size_8-of-12 .card-header h2{
+.slds-grid > .slds-size_4-of-12  .slds-size_8-of-12 .card_header h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
     width: 45%;
     padding-left: 15px;
 }
-.card-three-column  .slds-size_8-of-12 .card-details{
+.slds-grid > .slds-size_4-of-12  .slds-size_8-of-12 .card_details{
     padding-top: 12px;
 }
-
-.card-three-column  .card-btn {
+.slds-grid > .slds-size_4-of-12  .card_btn {
     position: absolute; 
     top: 10px; 
     right: 20px; 
     width: 50%;
 }
-
 /* THREE COLUMN END*/
+
+/* DEFAULT PILL STYLE START HERE */
+.default-pill{
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+.default-pill_high{
+    background-color: #FF9F9F;
+}
+.default-pill_medium{
+    background-color: #FFC58F;
+}
+.default-pill_low{
+    background-color:#A2FFE9;
+}
 
