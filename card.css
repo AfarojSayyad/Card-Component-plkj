@@ -1,0 +1,80 @@
+.card-indicator{
+    margin: 20px;
+
+}
+.slds-grid{
+    row-gap: 1rem;
+}
+.card h6{
+    padding-top: 20px;
+    color: #1C4F8B;
+}
+.card-indicator_selected  {
+    background-color: #ffff;
+    color:#4B4B4B;
+    border-radius: 5px;
+   border: 1px solid #1C4F8B;
+}
+.card_default{
+    background-color: #ffff;
+    color:#4B4B4B;
+    border-radius: 5px;
+    border: 1px solid #ADADAD;
+}
+
+.card_default .card-indicator_header{
+    display: flex;
+    width: 100%;
+    background-color: #E5E5E5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 0;
+    color: #4B4B4B;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.card-indicator_selected .card-indicator_header{
+    display: flex;
+    width: 100%;
+    background-color: #1C4F8B;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.slds-icon{
+    color:#36BB9B; 
+    background-color: transparent; 
+    margin: 0 10px;
+}
+.slds-dl_horizontal__label{
+    padding: 10px;
+}
+dd{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+}
+.slds-size_8-of-12 .slds-region_narrow{
+    padding-left: 12px;
+}
+.card >.slds-size_4-of-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-indicator_gauge-chart div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+
+/* .slds-size_4-of-12 > .slds-size_8-of-12{
+    width: 100%;
+} */

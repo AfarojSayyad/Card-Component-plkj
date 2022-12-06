@@ -5,13 +5,315 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card indicator</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/handsontable@11.1/dist/handsontable.full.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/styles/salesforce-lightning-design-system.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/salesforce-lightning-design-system-legacy.css"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
        <!-- CARD INDICATOR START HERE -->
       
-       <div class="card">
+       <div class="card-indicator">
    
-           <div class="slds-grid slds-wrap  slds-gutters_x-small">
+
+    <div class="slds-grid slds-wrap  slds-gutters_x-small">
+             <!-- THREE COLUMN START -->
+          <!-- column 1st start -->
+          
+          <div class="slds-col slds-size_4-of-12">
+            <div class="slds-grid slds-wrap card-indicator_selected">
+                <div class="card-indicator_header slds-col ">
+                    <span class="slds-current-color slds-icon-utility-forward_up" >
+
+                        <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                           <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#forward_up"></use>
+                       </svg>
+                       </span>
+                      <h2>Financials</h2>
+                </div>
+                <div class=" slds-col slds-size_8-of-12 slds-grid_align-center slds-p-bottom_small">
+                    <div class="slds-region_narrow" style="width:400px" >
+                        <dl class="slds-dl_horizontal">
+                        <dt class="slds-dl_horizontal__label">Deal Cycle Days :</dt>
+                        <dd class="slds-dl_horizontal__detail">45</dd>
+                        <dt class="slds-dl_horizontal__label">Competition :</dt>
+                        <dd class="slds-dl_horizontal__detail">High</dd>                        
+                        <dt class="slds-dl_horizontal__label view-details">View Details</dt>
+                        
+                        </dl>
+                        <!-- <h6>View Details</h6> -->
+                    </div>
+                
+
+                </div>
+        
+                <div class="card-indicator_gauge-chart slds-col slds-size_4-of-12 slds-grid slds-grid_align-center slds-p-bottom_small">
+                <div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEE9nT_HxNvWJERm8-jkbTL9fIfN23RoV_A&usqp=CAU" alt="">
+                    <p>
+                        Margin (%)
+                    </p>
+                </div>
+                </div>
+            </div>
+          </div>
+          <!-- column 1st end -->
+          <!-- column 2nd start-->
+    
+          <div class="slds-col slds-size_4-of-12">
+            <div class="slds-grid slds-wrap card-indicator_default">
+                <div class="card-indicator_header slds-col ">
+                    <span class="slds-current-color slds-icon-utility-moneybag" >
+
+                        <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                           <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#moneybag"></use>
+                       </svg>
+                       </span>
+                      <h2>Sales</h2>
+                </div>
+                <div class=" slds-col slds-size_8-of-12 slds-grid_align-center slds-p-bottom_small">
+                    <div class="slds-region_narrow" style="width:400px" >
+                        <dl class="slds-dl_horizontal">
+                        <dt class="slds-dl_horizontal__label">Deal Cycle Days :</dt>
+                        <dd class="slds-dl_horizontal__detail">45</dd>
+                        <dt class="slds-dl_horizontal__label">Competition :</dt>
+                        <dd class="slds-dl_horizontal__detail">High</dd>                        
+                        <dt class="slds-dl_horizontal__label view-details">View Details</dt>
+                        
+                        </dl>
+                        <!-- <h6>View Details</h6> -->
+                    </div>
+                
+
+                </div>
+        
+                <div class="card-indicator_gauge-chart slds-col slds-size_4-of-12 slds-grid slds-grid_align-center slds-p-bottom_small">
+                <div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEE9nT_HxNvWJERm8-jkbTL9fIfN23RoV_A&usqp=CAU" alt="">
+                    <p>
+                        Margin (%)
+                    </p>
+                </div>
+                </div>
+            </div>
+          </div>
+          <!-- column 2nd end-->
+          <!-- column 3rd start -->
+          <div class="slds-col slds-size_4-of-12">
+            <div class="slds-grid slds-wrap card-indicator_default">
+                <div class="card-indicator_header slds-col ">
+                    <span class="slds-current-color slds-icon-utility-moneybag" >
+
+                        <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                           <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#moneybag"></use>
+                       </svg>
+                       </span>
+                      <h2>Sales</h2>
+                </div>
+                <div class=" slds-col slds-size_8-of-12 slds-grid_align-center slds-p-bottom_small">
+                    <div class="slds-region_narrow" style="width:400px; " >
+                        <dl class="slds-dl_horizontal">
+                        <dt class="slds-dl_horizontal__label">Scope Risk :</dt>
+                        <dd class="slds-dl_horizontal__detail"> 
+                            <div class="default-pill default-pill_high" >
+                                <span>High</span>
+                            </div>
+                        </dd>
+                        <dt class="slds-dl_horizontal__label">Timeline Risk :</dt>
+                        <dd class="slds-dl_horizontal__detail">
+                            <div class="default-pill default-pill_medium" >
+                                <span>Medium</span>
+                            </div>
+                        </dd>
+                        <dt class="slds-dl_horizontal__label">Staffing Risk :</dt>
+                        <dd class="slds-dl_horizontal__detail">
+                            <div class="default-pill default-pill_low" >
+                                <span>Low</span>
+                            </div>
+                        </dd>
+                        <dt class="slds-dl_horizontal__label view-details">View Details</dt>
+                        </dl>
+                        <!-- <h6>View Details</h6> -->
+                    </div>
+                
+
+                </div>
+        
+                <div class="card-indicator_gauge-chart slds-col slds-size_4-of-12 slds-grid slds-grid_align-center slds-p-bottom_small">
+                <div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEE9nT_HxNvWJERm8-jkbTL9fIfN23RoV_A&usqp=CAU" alt="">
+                    <p>
+                        Margin (%)
+                    </p>
+                </div>
+                </div>
+            </div>
+          </div>
+          <!-- column 3rd end -->
+          </div>
+          <br>
+          <div class="slds-grid slds-wrap  slds-gutters_x-small">
+          <!-- THREE COLUMN END -->
+          <div class="slds-col slds-size_6-of-12">
+            <div class="slds-grid slds-wrap card-indicator_default">
+                <div class="card-indicator_header slds-col ">
+                    <span class="slds-current-color slds-icon-utility-forward_up" >
+
+                       <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#forward_up"></use>
+                      </svg>
+                      </span>
+                      <h2>Financials</h2>
+                </div>
+                <div class=" slds-col slds-size_8-of-12 slds-grid_align-center slds-p-bottom_small">
+                    <div class="slds-region_narrow" style="width:400px; " >
+                        <dl class="slds-dl_horizontal">
+                        <dt class="slds-dl_horizontal__label">Scope Risk :</dt>
+                        <dd class="slds-dl_horizontal__detail"> 
+                            <div class="default-pill default-pill_high" >
+                                <span>High</span>
+                            </div>
+                        </dd>
+                        <dt class="slds-dl_horizontal__label">Timeline Risk :</dt>
+                        <dd class="slds-dl_horizontal__detail">
+                            <div class="default-pill default-pill_medium" >
+                                <span>Medium</span>
+                            </div>
+                        </dd>
+                        <dt class="slds-dl_horizontal__label">Staffing Risk :</dt>
+                        <dd class="slds-dl_horizontal__detail">
+                            <div class="default-pill default-pill_low" >
+                                <span>Low</span>
+                            </div>
+                        </dd>
+                        <dt class="slds-dl_horizontal__label view-details">View Details</dt>
+                        </dl>
+                        <!-- <h6>View Details</h6> -->
+                    </div>
+                
+
+                </div>
+        
+                <div class="card-indicator_gauge-chart slds-col slds-size_4-of-12 slds-grid slds-grid_align-center slds-p-bottom_small">
+                    <div>
+    
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEE9nT_HxNvWJERm8-jkbTL9fIfN23RoV_A&usqp=CAU" alt="">
+                        <p>
+                            Margin (%)
+                        </p>
+                    </div>
+                    </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="slds-col slds-size_6-of-12">
+            <div class="slds-grid slds-wrap card-indicator_default">
+                <div class="card-indicator_header slds-col ">
+                    <span class="slds-current-color slds-icon-utility-move" >
+
+                       <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#move"></use>
+                      </svg>
+                      </span>
+                      <h2>Financials</h2>
+                </div>
+                <div class=" slds-col slds-size_8-of-12 slds-grid_align-center slds-p-bottom_small">
+                    <div class="slds-region_narrow" style="width:400px" >
+                        <dl class="slds-dl_horizontal">
+                        <dt class="slds-dl_horizontal__label">Deal Amount</dt>
+                        <dd class="slds-dl_horizontal__detail">$1,124,000</dd>
+                        <dt class="slds-dl_horizontal__label">Customer Budget</dt>
+                        <dd class="slds-dl_horizontal__detail">$1,234,000</dd>
+                        <dt class="slds-dl_horizontal__label view-details">View Details</dt>
+                        </dl>
+                        <!-- <h6>View Details</h6> -->
+                    </div>
+                
+
+                </div>
+        
+                <div
+                class="card-indicator_gauge-chart slds-col slds-size_4-of-12 slds-grid slds-grid_align-center slds-p-bottom_small"
+            >
+            <div>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEE9nT_HxNvWJERm8-jkbTL9fIfN23RoV_A&usqp=CAU" alt="" >
+                <p>
+                    Margin (%)
+                </p>
+            </div>
+            </div>
+            </div>
+          </div>
+          </div>
+          <br>
+          <div class="slds-grid slds-wrap  slds-gutters_x-small">
+
+          <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap card-indicator_default">
+                <div class="card-indicator_header slds-col ">
+                    <span class="slds-current-color slds-icon-utility-forward_up" >
+
+                       <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#forward_up"></use>
+                      </svg>
+                      </span>
+                      <h2>Financials</h2>
+                </div>
+                <div class=" slds-col slds-size_8-of-12 slds-grid_align-center slds-p-bottom_small">
+                    <div class="slds-region_narrow" style="width:400px" >
+                        <dl class="slds-dl_horizontal">
+                        <dt class="slds-dl_horizontal__label">Deal Amount</dt>
+                        <dd class="slds-dl_horizontal__detail">$1,124,000</dd>
+                        <dt class="slds-dl_horizontal__label">Customer Budget</dt>
+                        <dd class="slds-dl_horizontal__detail">$1,234,000</dd>
+                        <dt class="slds-dl_horizontal__label view-details">View Details</dt>
+                        </dl>
+                        <!-- <h6>View Details</h6> -->
+                    </div>
+                
+
+                </div>
+        
+                <div
+                class="card-indicator_gauge-chart slds-col slds-size_4-of-12 slds-grid slds-grid_align-center slds-p-bottom_small"
+            >
+            <div>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEE9nT_HxNvWJERm8-jkbTL9fIfN23RoV_A&usqp=CAU" alt="" >
+                <p>
+                    Margin (%)
+                </p>
+            </div>
+            </div>
+            </div>
+          </div>
+          </div>
+          <br>
+          <div class="slds-grid slds-wrap  slds-gutters_x-small">
+
+
            </div>
        </div>
       <!-- CARD INDICATOR END HERE -->

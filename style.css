@@ -19,6 +19,11 @@ html{
     color:#4B4B4B;
     border-radius: 5px;
 }
+.card_default:hover {
+    outline: 1px solid #2d72b8;
+    box-shadow: 0px 0px 4px #2d72b8;
+    border-radius: 4px;
+  }
 .card_header h2{
     font-size:16px;
 }
@@ -73,52 +78,52 @@ html{
  
 
 /* ONE COLUMN LAYOUT START */
-.slds-size_12-of-12{
+.card .slds-size_12-of-12{
     align-items: center;
 }
 
-.slds-size_12-of-12 .slds-size_8-of-12 {
+.card .slds-size_12-of-12 .slds-size_8-of-12 {
     display: flex;
     flex-direction: row;
     align-items: center;
     
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .card_header h2{
+.card .slds-size_12-of-12 .slds-size_8-of-12 .card_header h2{
     padding-left: 15px;
 
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .card_details{
+.card .slds-size_12-of-12 .slds-size_8-of-12 .card_details{
     display: flex;
     justify-content: space-between;
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .card_details .card_details-border_left{
+.card .slds-size_12-of-12 .slds-size_8-of-12 .card_details .card_details-border_left{
     border-left:1px solid #fff;
 }
-.slds-size_12-of-12 .slds-size_8-of-12 .card_details .card_details-border_right{
+.card .slds-size_12-of-12 .slds-size_8-of-12 .card_details .card_details-border_right{
     border-right:1px solid #fff;
 }
- .slds-size_12-of-12 .slds-size_8-of-12 .card_details span  {
+.card  .slds-size_12-of-12 .slds-size_8-of-12 .card_details span  {
     text-align: center;
 }
-.slds-size_12-of-12 .card_btn{
+.card .slds-size_12-of-12 .card_btn{
     align-self: center;
 }
 /* ONE COLUMN LAYOUT END */
 
 /* TWO COLUMN LAYOUT START */
-.slds-size_6-of-12{
+.card .slds-size_6-of-12{
     position: relative;
 }
-.slds-size_6-of-12 .slds-size_8-of-12  .card_header{
+.card .slds-size_6-of-12 .slds-size_8-of-12  .card_header{
     padding: 10px;
 }
-.slds-size_6-of-12 .slds-size_8-of-12  .card_header h2{
+.card .slds-size_6-of-12 .slds-size_8-of-12  .card_header h2{
     padding-left: 5px;
 }
-.slds-size_6-of-12 .slds-size_8-of-12 .card_details{
+.card .slds-size_6-of-12 .slds-size_8-of-12 .card_details{
     padding-top: 0px;
 }
-.slds-size_6-of-12 .card_btn{
+.card .slds-size_6-of-12 .card_btn{
     position:absolute;
     top:30px;
     right: 30px ;
@@ -126,23 +131,23 @@ html{
 /* TWO COLUMN LAYOUT END */
 
 /* THREE COLUMN START*/
-.slds-grid > .slds-size_4-of-12{
+.card .slds-grid > .slds-size_4-of-12{
     position: relative;
 }
-.slds-grid > .slds-size_4-of-12  .slds-size_8-of-12{
+.card .slds-grid > .slds-size_4-of-12  .slds-size_8-of-12{
     width: 100%;
 }
-.slds-grid > .slds-size_4-of-12  .slds-size_8-of-12 .card_header h2{
+.card .slds-grid > .slds-size_4-of-12  .slds-size_8-of-12 .card_header h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
     width: 45%;
     padding-left: 10px;
 }
-.slds-grid > .slds-size_4-of-12  .slds-size_8-of-12 .card_details{
+.card .slds-grid > .slds-size_4-of-12  .slds-size_8-of-12 .card_details{
     padding-top: 12px;
 }
-.slds-grid > .slds-size_4-of-12  .card_btn {
+.card .slds-grid > .slds-size_4-of-12  .card_btn {
     position: absolute; 
     top: 10px; 
     right: 20px; 
@@ -166,4 +171,122 @@ html{
 .default-pill_low{
     background-color:#A2FFE9;
 }
+
+/* CARD TYPE 2 */
+.card-indicator{
+    margin: 20px;
+    overflow-x: hidden;
+}
+.slds-grid{
+    row-gap: 1rem;
+}
+.card-indicator .view-details{
+    color: #1C4F8B;
+
+}
+.card-indicator_selected  {
+    background-color: #ffff;
+    color:#4B4B4B;
+    border-radius: 5px;
+   border: 1px solid #1C4F8B;
+}
+.card-indicator_default{
+    background-color: #ffff;
+    color:#4B4B4B;
+    border-radius: 5px;
+    border: 1px solid #ADADAD;
+}
+.card-indicator_default:hover {
+    border: 1px solid #2d72b8;
+    box-shadow: 0px 0px 4px #2d72b8;
+    border-radius: 4px;
+  }
+.card-indicator_default .card-indicator_header{
+    display: flex;
+    width: 100%;
+    background-color: #E5E5E5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 0;
+    color: #4B4B4B;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.card-indicator_selected .card-indicator_header{
+    display: flex;
+    width: 100%;
+    background-color: #1C4F8B;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.slds-icon{
+    color:#36BB9B; 
+    background-color: transparent; 
+    margin: 0 10px 0 14px;
+}
+dd{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+}
+.slds-size_8-of-12 .slds-region_narrow{
+    padding-left: 12px;
+}
+.card-indicator .default-pill{
+    width: 20%;
+}
+.card-indicator >.slds-size_4-of-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-indicator_gauge-chart div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+.slds-dl_horizontal__label{
+    padding: 10px 0;
+}
+.slds-dl_horizontal__detail{
+    padding: 5px 0;
+}
+.slds-size_4-of-12{
+    /* display: flex; */
+    position: relative;
+    height: 100%;
+}
+.slds-size_4-of-12 h6{
+    
+    position: absolute;
+    bottom: 15px;
+}
+.slds-size_6-of-12{
+    position: relative;
+}
+.slds-size_6-of-12 h6{
+    
+    position: absolute;
+    bottom: 15px;
+}
+.slds-size_12-of-12{
+    position: relative;
+}
+.slds-size_12-of-12 h6{
+    /* position: relative;
+    bottom: 15px;
+    top: 20px; */
+}
+
+
+/* .slds-size_4-of-12 > .slds-size_8-of-12{
+    width: 100%;
+} */
 
