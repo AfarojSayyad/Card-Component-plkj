@@ -1,13 +1,14 @@
+/* CARD TYPE 2 */
 .card-indicator{
     margin: 20px;
-
+    overflow-x: hidden;
 }
 .slds-grid{
     row-gap: 1rem;
 }
-.card h6{
-    padding-top: 20px;
+.card-indicator .view-details{
     color: #1C4F8B;
+
 }
 .card-indicator_selected  {
     background-color: #ffff;
@@ -15,14 +16,18 @@
     border-radius: 5px;
    border: 1px solid #1C4F8B;
 }
-.card_default{
+.card-indicator_default{
     background-color: #ffff;
     color:#4B4B4B;
     border-radius: 5px;
     border: 1px solid #ADADAD;
 }
-
-.card_default .card-indicator_header{
+.card-indicator_default:hover {
+    border: 1px solid #2d72b8;
+    box-shadow: 0px 0px 4px #2d72b8;
+    border-radius: 4px;
+  }
+.card-indicator_default .card-indicator_header{
     display: flex;
     width: 100%;
     background-color: #E5E5E5;
@@ -47,10 +52,7 @@
 .slds-icon{
     color:#36BB9B; 
     background-color: transparent; 
-    margin: 0 10px;
-}
-.slds-dl_horizontal__label{
-    padding: 10px;
+    margin: 0 10px 0 14px;
 }
 dd{
     font-size: 16px;
@@ -60,7 +62,10 @@ dd{
 .slds-size_8-of-12 .slds-region_narrow{
     padding-left: 12px;
 }
-.card >.slds-size_4-of-12 {
+.card-indicator .default-pill{
+    width: 20%;
+}
+.card-indicator >.slds-size_4-of-12 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,10 +76,49 @@ dd{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 30px;
+    padding-right: 40px;
+}
+.slds-dl_horizontal__label{
+    padding: 10px 0;
+}
+.slds-dl_horizontal__detail{
+    padding: 5px 0;
+}
+.slds-size_4-of-12{
+    /* display: flex; */
+    position: relative;
+    height: 100%;
+}
+.slds-size_4-of-12 h6{
+    
+    position: absolute;
+    bottom: 15px;
+}
+.slds-size_6-of-12{
+    position: relative;
+}
+.slds-size_6-of-12 h6{
+    
+    position: absolute;
+    bottom: 15px;
+}
+.slds-size_12-of-12{
+    position: relative;
+}
+/* DEFAULT PILL STYLE START HERE */
+.default-pill{
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+.default-pill_high{
+    background-color: #FF9F9F;
+}
+.default-pill_medium{
+    background-color: #FFC58F;
+}
+.default-pill_low{
+    background-color:#A2FFE9;
 }
 
-
-/* .slds-size_4-of-12 > .slds-size_8-of-12{
-    width: 100%;
-} */
